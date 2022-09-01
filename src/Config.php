@@ -57,7 +57,10 @@ class Config
             'ordered_traits' => true,
             'simplified_if_return' => true,
             'ternary_to_null_coalescing' => true,
-            'multiline_whitespace_before_semicolons' => 'no_multi_line',
+
+            'multiline_whitespace_before_semicolons' => [
+                'strategy' => 'no_multi_line',
+            ],
 
             'yoda_style' => [
                 'always_move_variable' => false,
