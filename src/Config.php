@@ -57,6 +57,14 @@ class Config
             'ordered_traits' => true,
             'simplified_if_return' => true,
             'ternary_to_null_coalescing' => true,
+            'multiline_whitespace_before_semicolons' => 'no_multi_line',
+
+            'yoda_style' => [
+                'always_move_variable' => false,
+                'equal' => null,
+                'identical' => null,
+                'less_and_greater' => null,
+            ],
         ];
     }
 
@@ -70,6 +78,6 @@ class Config
 
     public static function make(): self
     {
-        return new self;
+        return new self();
     }
 }
